@@ -1,0 +1,54 @@
+/* Base styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f8ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Part 1: CSS Transitions and Animations */
+.animated-btn {
+  background: #5563DE;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.animated-btn:hover {
+  transform: scale(1.1) rotate(-3deg);
+  background: #3740a6;
+}
+
+/* Animated box initially */
+.box {
+  width: 100px;
+  height: 100px;
+  background: #5563DE;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+/* CSS keyframe animation (we’ll trigger via JS) */
+@keyframes slideAndFade {
+  0% { transform: translateX(0); opacity: 1; }
+  50% { transform: translateX(150px); opacity: 0.5; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.animate {
+  animation: slideAndFade 1.5s ease-in-out;
+}

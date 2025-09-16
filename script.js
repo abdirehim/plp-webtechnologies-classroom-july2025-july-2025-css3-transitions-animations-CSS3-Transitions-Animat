@@ -22,7 +22,7 @@ document.getElementById('calcBtn').addEventListener('click', () => {
 });
 
 // ------------------------------
-// Part 3: Combining CSS Animations with JavaScript
+// Part 3: Combining CSS Animations with JavaScript good
 // ------------------------------
 
 const box = document.getElementById('animateBox');
